@@ -58,7 +58,20 @@ def main(cfg):
         print(f'Generating split: {split}')
 
         for episode in tqdm(data.get_split(split, loader=False), position=0, leave=False):
+            
+
             scene_dir = labels_dir / episode.scene_name
+            print(labels_dir)
+            print(episode.scene_name)
+            print(scene_dir)
+           
+            # skip if already processed this scene
+            json_file_path = labels_dir/f'{episode.scene_name}.json'
+            if json_file_path.exists():
+                print("Already processed " + str(json_file_path))
+                continue
+
+    
             scene_dir.mkdir(exist_ok=True, parents=False)
 
             loader = torch.utils.data.DataLoader(episode, collate_fn=list, **cfg.loader)
@@ -69,18 +82,18 @@ def main(cfg):
 
                 # Load data from disk to test if it was saved correctly
                 if i == 0 and viz_fn is not None:
-                    unbatched = [load_xform(s) for s in batch]
+                    unbatched = [load_ixform(s) for s in batch]
                     rebatched = torch.utils.data.dataloader.default_collate(unbatched)
 
-                    viz = np.vstack(viz_fn(rebatched))
+              #      viz = np.vstack(viz_fn(rebatched))
 
-                    cv2.imshow('debug', cv2.cvtColor(viz, cv2.COLOR_RGB2BGR))
-                    cv2.waitKey(1)
+#                    cv2.imshow('debug', cv2.cvtColor(viz, cv2.COLOR_RGB2BGR))
+#                    cv2.waitKey(1)
 
             # Write all info for loading to json
             scene_json = labels_dir / f'{episode.scene_name}.json'
             scene_json.write_text(json.dumps(info))
-
+            
 
 if __name__ == '__main__':
     main()

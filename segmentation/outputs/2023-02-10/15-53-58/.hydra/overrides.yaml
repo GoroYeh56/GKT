@@ -1,0 +1,5 @@
+- data=nuscenes
+- data.version=v1.0-trainval
+- data.dataset_dir=/home/goroyeh/nuScene_dataset/media/datasets/nuscenes
+- data.labels_dir=/home/goroyeh/nuScene_dataset/media/datasets/cvt_labels_nuscenes
+- visualization=nuscenes_viz

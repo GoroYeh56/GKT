@@ -1,0 +1,7 @@
+[2023-02-11 16:06:50,760][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmph0i1no_t
+[2023-02-11 16:06:50,760][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmph0i1no_t/_remote_module_non_sriptable.py
+[2023-02-11 16:06:50,959][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.
+[2023-02-11 16:06:53,124][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 2
+[2023-02-11 16:06:54,012][torch.distributed.distributed_c10d][INFO] - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-11 16:06:58,485][cross_view_transformer.tabular_logger][WARNING] - Missing logger folder: /home/goroyeh/GKT/segmentation/logs/lightning_logs
+[2023-02-11 16:07:05,557][root][INFO] - Reducer buckets have been rebuilt in this iteration.

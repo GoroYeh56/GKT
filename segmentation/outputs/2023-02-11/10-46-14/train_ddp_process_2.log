@@ -1,0 +1,5 @@
+[2023-02-11 10:46:18,713][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp5mcx5sxy
+[2023-02-11 10:46:18,714][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp5mcx5sxy/_remote_module_non_sriptable.py
+[2023-02-11 10:46:19,038][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.
+[2023-02-11 10:46:21,207][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 2
+[2023-02-11 10:46:21,935][torch.distributed.distributed_c10d][INFO] - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.

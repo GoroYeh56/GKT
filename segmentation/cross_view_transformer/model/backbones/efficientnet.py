@@ -54,9 +54,10 @@ class EfficientNetExtractor(torch.nn.Module):
                 idx_max = max(idx_max, i)
                 layer_to_idx[layer_name] = i
 
+        # segmentation/cross_view_transformer/model/backbone/efficient.py
         # We can set memory efficient swish to false since we're using checkpointing
         net = EfficientNet.from_pretrained(
-            model_name, weights_path="../../../pretrained_models/efficientnet-b4-6ed6700e.pth")
+            model_name, weights_path="../../../../pretrained_models/efficientnet-b4-6ed6700e.pth")
         net.set_swish(False)
 
         drop = net._global_params.drop_connect_rate / len(net._blocks)
