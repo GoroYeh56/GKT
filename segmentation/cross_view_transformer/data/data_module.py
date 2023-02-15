@@ -3,7 +3,15 @@ import pytorch_lightning as pl
 
 from . import get_dataset_module_by_name
 
-
+# data_config: config/data/nuscenes.yaml
+# loader_config: config/config.yaml
+"""
+loader:
+  batch_size: 4
+  num_workers: 4
+  pin_memory: True
+  prefetch_factor: 45
+"""
 class DataModule(pl.LightningDataModule):
     def __init__(self, dataset: str, data_config: dict, loader_config: dict):
         super().__init__()

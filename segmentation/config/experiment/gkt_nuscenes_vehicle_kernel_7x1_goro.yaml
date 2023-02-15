@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - override /model: gkt
+  - override /data: nuscenes_vehicle
+
+  - override /loss: center_loss
+  - override /metrics: visibility_metrics
+
+experiment:
+  ckptt: "model_test.ckpt"
+
+model:
+  outputs:
+    bev: [0, 1]
+    center: [1, 2]

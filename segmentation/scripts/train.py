@@ -32,7 +32,8 @@ def maybe_resume_training(experiment):
 
     return checkpoints[-1]
 
-
+# config_path: currnet_working_directory/config ( => GKT/segmentation + /config)
+# config_name: 'config.yaml'
 @hydra.main(config_path=CONFIG_PATH, config_name=CONFIG_NAME)
 def main(cfg):
     setup_config(cfg)

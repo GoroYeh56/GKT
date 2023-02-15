@@ -22,7 +22,7 @@ def setup_config(cfg: DictConfig, override: Optional[Callable] = None):
     OmegaConf.resolve(cfg)
     OmegaConf.set_struct(cfg, True)
 
-    save_dir = Path(cfg.experiment.save_dir)
+    save_dir = Path(cfg.experiment.save_dir)  # ${hydra:runtime.cwd}/logs/  in config.yaml
     save_dir.mkdir(parents=False, exist_ok=True)
 
 
