@@ -22,9 +22,12 @@ def maybe_resume_training(experiment):
     log.info(f'In maybe_resume_training:')
     log.info(f'experiment.ckptt: {experiment.ckptt}')
     save_dir = Path(experiment.save_dir).resolve()
+    
+    log.info(f'save_dir: {save_dir}')
+    log.info(f'**/{experiment.uuid}/checkpoints/*.ckpt')
     checkpoints = list(save_dir.glob(
         f'**/{experiment.uuid}/checkpoints/*.ckpt'))
-
+    log.info(f'checkpoints: {checkpoints}')
     log.info(f'Searching {save_dir}.')
 
     if not checkpoints:

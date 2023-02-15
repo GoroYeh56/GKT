@@ -1,0 +1,2 @@
+lr-AdamW:0.0004000000000000002, step:0
+train/loss_step:0.04213293269276619, train/loss/visible_step:0.03523905202746391, train/loss/center_step:0.06893880665302277, epoch:0, step:49

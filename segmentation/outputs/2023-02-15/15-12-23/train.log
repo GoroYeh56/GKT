@@ -1,0 +1,34 @@
+[2023-02-15 15:12:23,570][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp5yjvw8ss
+[2023-02-15 15:12:23,570][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp5yjvw8ss/_remote_module_non_sriptable.py
+[2023-02-15 15:12:23,801][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.
+[2023-02-15 15:12:30,921][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2023-02-15 15:12:30,921][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-15 15:12:40,412][cross_view_transformer.tabular_logger][INFO] - lr-AdamW:0.000400, step:0
+[2023-02-15 15:12:42,406][root][INFO] - Reducer buckets have been rebuilt in this iteration.
+[2023-02-15 15:12:52,265][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.042344, train/loss/visible_step:0.035400, train/loss/center_step:0.069437, epoch:0, step:49
+[2023-02-15 15:13:02,446][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.037144, train/loss/visible_step:0.033419, train/loss/center_step:0.037254, epoch:0, step:99
+[2023-02-15 15:13:11,684][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.031695, train/loss/visible_step:0.029328, train/loss/center_step:0.023672, epoch:0, step:149
+[2023-02-15 15:13:20,625][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.019261, train/loss/visible_step:0.017694, train/loss/center_step:0.015666, epoch:0, step:199
+[2023-02-15 15:13:29,643][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.017839, train/loss/visible_step:0.016688, train/loss/center_step:0.011512, epoch:0, step:249
+[2023-02-15 15:13:38,545][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.013638, train/loss/visible_step:0.012802, train/loss/center_step:0.008361, epoch:0, step:299
+[2023-02-15 15:13:47,494][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.014214, train/loss/visible_step:0.013568, train/loss/center_step:0.006463, epoch:0, step:349
+[2023-02-15 15:13:56,400][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.016804, train/loss/visible_step:0.016246, train/loss/center_step:0.005584, epoch:0, step:399
+[2023-02-15 15:14:05,311][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.013146, train/loss/visible_step:0.012724, train/loss/center_step:0.004216, epoch:0, step:449
+[2023-02-15 15:14:14,208][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.018349, train/loss/visible_step:0.017976, train/loss/center_step:0.003729, epoch:0, step:499
+[2023-02-15 15:14:23,180][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.015857, train/loss/visible_step:0.015537, train/loss/center_step:0.003205, epoch:0, step:549
+[2023-02-15 15:14:32,162][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.023160, train/loss/visible_step:0.022852, train/loss/center_step:0.003077, epoch:0, step:599
+[2023-02-15 15:14:41,133][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.019478, train/loss/visible_step:0.019200, train/loss/center_step:0.002782, epoch:0, step:649
+[2023-02-15 15:14:49,979][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.021200, train/loss/visible_step:0.020963, train/loss/center_step:0.002372, epoch:0, step:699
+[2023-02-15 15:14:59,010][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.019834, train/loss/visible_step:0.019613, train/loss/center_step:0.002211, epoch:0, step:749
+[2023-02-15 15:15:07,954][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.020149, train/loss/visible_step:0.019951, train/loss/center_step:0.001975, epoch:0, step:799
+[2023-02-15 15:15:16,970][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.013399, train/loss/visible_step:0.013213, train/loss/center_step:0.001854, epoch:0, step:849
+[2023-02-15 15:15:25,873][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.008565, train/loss/visible_step:0.008424, train/loss/center_step:0.001412, epoch:0, step:899
+[2023-02-15 15:15:34,812][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.011384, train/loss/visible_step:0.011246, train/loss/center_step:0.001376, epoch:0, step:949
+[2023-02-15 15:15:43,827][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.008655, train/loss/visible_step:0.008534, train/loss/center_step:0.001213, epoch:0, step:999
+[2023-02-15 15:15:52,768][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.024299, train/loss/visible_step:0.024145, train/loss/center_step:0.001537, epoch:0, step:1049
+[2023-02-15 15:16:01,676][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.013332, train/loss/visible_step:0.013198, train/loss/center_step:0.001342, epoch:0, step:1099
+[2023-02-15 15:16:10,680][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.012838, train/loss/visible_step:0.012710, train/loss/center_step:0.001280, epoch:0, step:1149
+[2023-02-15 15:16:19,650][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.012779, train/loss/visible_step:0.012665, train/loss/center_step:0.001138, epoch:0, step:1199
+[2023-02-15 15:16:28,661][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.012092, train/loss/visible_step:0.012002, train/loss/center_step:0.000904, epoch:0, step:1249
+[2023-02-15 15:16:37,618][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.012509, train/loss/visible_step:0.012392, train/loss/center_step:0.001167, epoch:0, step:1299
+[2023-02-15 15:16:46,609][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.013035, train/loss/visible_step:0.012938, train/loss/center_step:0.000968, epoch:0, step:1349

@@ -1,0 +1,11 @@
+[2023-02-15 15:39:01,441][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpqchymr86
+[2023-02-15 15:39:01,441][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpqchymr86/_remote_module_non_sriptable.py
+[2023-02-15 15:39:01,674][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 15:39:01,675][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 15:39:01,675][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/logs
+[2023-02-15 15:39:01,675][__main__][INFO] - **/0215_153901/checkpoints/*.ckpt
+[2023-02-15 15:39:01,676][__main__][INFO] - checkpoints: []
+[2023-02-15 15:39:01,676][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.
+[2023-02-15 15:39:04,814][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2023-02-15 15:39:05,714][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-15 15:39:25,983][root][INFO] - Reducer buckets have been rebuilt in this iteration.

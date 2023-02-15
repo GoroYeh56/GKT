@@ -1,0 +1,13 @@
+[2023-02-15 15:38:58,677][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpbaasssp2
+[2023-02-15 15:38:58,678][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpbaasssp2/_remote_module_non_sriptable.py
+[2023-02-15 15:38:58,923][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 15:38:58,923][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 15:38:58,923][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/logs
+[2023-02-15 15:38:58,924][__main__][INFO] - **/0215_153858/checkpoints/*.ckpt
+[2023-02-15 15:38:58,924][__main__][INFO] - checkpoints: []
+[2023-02-15 15:38:58,924][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.
+[2023-02-15 15:39:05,704][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2023-02-15 15:39:05,705][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-15 15:39:21,461][cross_view_transformer.tabular_logger][INFO] - lr-AdamW:0.000400, step:0
+[2023-02-15 15:39:25,979][root][INFO] - Reducer buckets have been rebuilt in this iteration.
+[2023-02-15 15:39:46,205][cross_view_transformer.tabular_logger][INFO] - train/loss_step:0.042133, train/loss/visible_step:0.035239, train/loss/center_step:0.068939, epoch:0, step:49

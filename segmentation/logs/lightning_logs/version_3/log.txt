@@ -1,0 +1,22 @@
+lr-AdamW:0.0004000000000000002, step:0
+train/loss_step:0.04210036247968674, train/loss/visible_step:0.035191021859645844, train/loss/center_step:0.06909339129924774, epoch:0, step:49
+train/loss_step:0.036955371499061584, train/loss/visible_step:0.033279430121183395, train/loss/center_step:0.036759428679943085, epoch:0, step:99
+train/loss_step:0.031445007771253586, train/loss/visible_step:0.029092837125062943, train/loss/center_step:0.023521723225712776, epoch:0, step:149
+train/loss_step:0.019249146804213524, train/loss/visible_step:0.017705781385302544, train/loss/center_step:0.01543364766985178, epoch:0, step:199
+train/loss_step:0.017967751249670982, train/loss/visible_step:0.016856452450156212, train/loss/center_step:0.011112989857792854, epoch:0, step:249
+train/loss_step:0.013327214866876602, train/loss/visible_step:0.012492351233959198, train/loss/center_step:0.008348631672561169, epoch:0, step:299
+train/loss_step:0.013713032938539982, train/loss/visible_step:0.013072689063847065, train/loss/center_step:0.006403440609574318, epoch:0, step:349
+train/loss_step:0.016808927059173584, train/loss/visible_step:0.016266196966171265, train/loss/center_step:0.005427306983619928, epoch:0, step:399
+train/loss_step:0.012900770641863346, train/loss/visible_step:0.012493312358856201, train/loss/center_step:0.004074587021023035, epoch:0, step:449
+train/loss_step:0.018617739900946617, train/loss/visible_step:0.018258098512887955, train/loss/center_step:0.003596407361328602, epoch:0, step:499
+train/loss_step:0.015759646892547607, train/loss/visible_step:0.015443084761500359, train/loss/center_step:0.0031656224746257067, epoch:0, step:549
+train/loss_step:0.02257714420557022, train/loss/visible_step:0.02228761650621891, train/loss/center_step:0.002895285375416279, epoch:0, step:599
+train/loss_step:0.019351966679096222, train/loss/visible_step:0.019078312441706657, train/loss/center_step:0.0027365407440811396, epoch:0, step:649
+train/loss_step:0.02104254812002182, train/loss/visible_step:0.020808763802051544, train/loss/center_step:0.002337837126106024, epoch:0, step:699
+train/loss_step:0.019034603610634804, train/loss/visible_step:0.01881953701376915, train/loss/center_step:0.0021506568882614374, epoch:0, step:749
+train/loss_step:0.01952594891190529, train/loss/visible_step:0.0193311907351017, train/loss/center_step:0.0019475767621770501, epoch:0, step:799
+train/loss_step:0.013470476493239403, train/loss/visible_step:0.013286495581269264, train/loss/center_step:0.00183980748988688, epoch:0, step:849
+train/loss_step:0.008568355813622475, train/loss/visible_step:0.00842954684048891, train/loss/center_step:0.0013880913611501455, epoch:0, step:899
+train/loss_step:0.011429226957261562, train/loss/visible_step:0.011293066665530205, train/loss/center_step:0.001361603382974863, epoch:0, step:949
+train/loss_step:0.008363761939108372, train/loss/visible_step:0.008242763578891754, train/loss/center_step:0.001209984184242785, epoch:0, step:999
+train/loss_step:0.024495994672179222, train/loss/visible_step:0.024344904348254204, train/loss/center_step:0.0015109054511412978, epoch:0, step:1049
