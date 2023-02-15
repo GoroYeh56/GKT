@@ -19,6 +19,8 @@ CONFIG_NAME = 'config.yaml'
 
 
 def maybe_resume_training(experiment):
+    log.info(f'In maybe_resume_training:')
+    log.info(f'experiment.ckptt: {experiment.ckptt}')
     save_dir = Path(experiment.save_dir).resolve()
     checkpoints = list(save_dir.glob(
         f'**/{experiment.uuid}/checkpoints/*.ckpt'))
@@ -49,6 +51,7 @@ def main(cfg):
     ckpt_path = maybe_resume_training(cfg.experiment)
 
     if ckpt_path is not None:
+        
         model_module.backbone = load_backbone(ckpt_path)
 
     # Loggers and callbacks
