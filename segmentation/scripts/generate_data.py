@@ -79,7 +79,7 @@ def main(cfg):
 
                 # Load data from disk to test if it was saved correctly
                 if i == 0 and viz_fn is not None:
-                    unbatched = [load_ixform(s) for s in batch]
+                    unbatched = [load_xform(s) for s in batch]
                     rebatched = torch.utils.data.dataloader.default_collate(unbatched)
                     viz = np.vstack(viz_fn(rebatched))
                     cv2.imshow('debug', cv2.cvtColor(viz, cv2.COLOR_RGB2BGR))
