@@ -1,0 +1,8 @@
+[2023-02-15 15:51:08,403][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp2l0ep_e0
+[2023-02-15 15:51:08,404][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp2l0ep_e0/_remote_module_non_sriptable.py
+[2023-02-15 15:51:08,603][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 15:51:08,604][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 15:51:08,604][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/logs
+[2023-02-15 15:51:08,604][__main__][INFO] - **/uuid_test/checkpoints/*.ckpt
+[2023-02-15 15:51:08,604][__main__][INFO] - checkpoints: []
+[2023-02-15 15:51:08,605][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.

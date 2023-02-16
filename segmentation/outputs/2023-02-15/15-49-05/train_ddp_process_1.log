@@ -1,0 +1,10 @@
+[2023-02-15 15:49:08,978][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpi7d49s90
+[2023-02-15 15:49:08,979][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpi7d49s90/_remote_module_non_sriptable.py
+[2023-02-15 15:49:09,181][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 15:49:09,181][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 15:49:09,181][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/logs
+[2023-02-15 15:49:09,181][__main__][INFO] - **/uuid_test/checkpoints/*.ckpt
+[2023-02-15 15:49:09,182][__main__][INFO] - checkpoints: []
+[2023-02-15 15:49:09,182][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/logs.
+[2023-02-15 15:49:12,284][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 1
+[2023-02-15 15:49:13,395][torch.distributed.distributed_c10d][INFO] - Rank 1: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.

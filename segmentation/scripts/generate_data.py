@@ -66,12 +66,10 @@ def main(cfg):
             print(scene_dir)
            
             # skip if already processed this scene
-            json_file_path = labels_dir/f'{episode.scene_name}.json'
-            if json_file_path.exists():
-                print("Already processed " + str(json_file_path))
-                continue
-
-    
+            #json_file_path = labels_dir/f'{episode.scene_name}.json'
+            #if json_file_path.exists():
+            #    print("Already processed " + str(json_file_path))
+            #    continue
             scene_dir.mkdir(exist_ok=True, parents=False)
 
             loader = torch.utils.data.DataLoader(episode, collate_fn=list, **cfg.loader)
@@ -84,11 +82,9 @@ def main(cfg):
                 if i == 0 and viz_fn is not None:
                     unbatched = [load_ixform(s) for s in batch]
                     rebatched = torch.utils.data.dataloader.default_collate(unbatched)
-
-              #      viz = np.vstack(viz_fn(rebatched))
-
-#                    cv2.imshow('debug', cv2.cvtColor(viz, cv2.COLOR_RGB2BGR))
-#                    cv2.waitKey(1)
+                    viz = np.vstack(viz_fn(rebatched))
+                    cv2.imshow('debug', cv2.cvtColor(viz, cv2.COLOR_RGB2BGR))
+                    cv2.waitKey(1)
 
             # Write all info for loading to json
             scene_json = labels_dir / f'{episode.scene_name}.json'

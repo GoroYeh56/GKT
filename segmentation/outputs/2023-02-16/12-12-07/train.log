@@ -1,0 +1,14 @@
+[2023-02-16 12:12:08,393][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmp_bnkgb6i
+[2023-02-16 12:12:08,393][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmp_bnkgb6i/_remote_module_non_sriptable.py
+[2023-02-16 12:12:08,617][__main__][INFO] - In maybe_resume_training:
+[2023-02-16 12:12:08,618][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-16 12:12:08,618][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/outputs
+[2023-02-16 12:12:08,618][__main__][INFO] - **/uuid_test/checkpoints/*.ckpt
+[2023-02-16 12:12:08,624][__main__][INFO] - checkpoints: [PosixPath('/home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt')]
+[2023-02-16 12:12:08,624][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/outputs.
+[2023-02-16 12:12:08,624][__main__][INFO] - Found /home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt.
+[2023-02-16 12:12:22,646][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2023-02-16 12:12:22,647][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-16 12:12:33,929][cross_view_transformer.tabular_logger][INFO] - lr-AdamW:0.000040, step:0
+[2023-02-16 12:12:35,866][cross_view_transformer.tabular_logger][INFO] - train/loss_epoch:0.006396, train/loss/visible_epoch:0.006343, train/loss/center_epoch:0.000536, epoch:18, step:0
+[2023-02-16 12:13:10,219][cross_view_transformer.tabular_logger][INFO] - train/metrics/iou@0.40:0.543381, train/metrics/iou@0.50:0.452703, train/metrics/iou_with_occlusions@0.40:0.446938, train/metrics/iou_with_occlusions@0.50:0.345992, val/loss:0.012434, val/loss/visible:0.012370, val/loss/center:0.000637, val/metrics/iou@0.40:0.376645, val/metrics/iou@0.50:0.365286, val/metrics/iou_with_occlusions@0.40:0.341148, val/metrics/iou_with_occlusions@0.50:0.306240, epoch:17, step:1

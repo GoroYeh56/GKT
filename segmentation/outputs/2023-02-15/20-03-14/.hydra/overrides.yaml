@@ -1,0 +1,3 @@
+- +experiment=gkt_nuscenes_vehicle_kernel_7x1_goro.yaml
+- data.dataset_dir=/home/goroyeh/nuScene_dataset/media/datasets/nuscenes/
+- data.labels_dir=/home/goroyeh/nuScene_dataset/media/datasets/cvt_labels_nuscenes/

@@ -1,0 +1,11 @@
+[2023-02-15 20:09:04,126][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpqr9dfbty
+[2023-02-15 20:09:04,127][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpqr9dfbty/_remote_module_non_sriptable.py
+[2023-02-15 20:09:04,350][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 20:09:04,351][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 20:09:04,351][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/outputs
+[2023-02-15 20:09:04,351][__main__][INFO] - **/uuid_test/checkpoints/*.ckpt
+[2023-02-15 20:09:04,357][__main__][INFO] - checkpoints: [PosixPath('/home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt')]
+[2023-02-15 20:09:04,357][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/outputs.
+[2023-02-15 20:09:04,357][__main__][INFO] - Found /home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt.
+[2023-02-15 20:09:08,280][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 2
+[2023-02-15 20:09:11,334][torch.distributed.distributed_c10d][INFO] - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.

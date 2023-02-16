@@ -1,0 +1,12 @@
+[2023-02-15 20:04:24,184][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpyunbdyyv
+[2023-02-15 20:04:24,185][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpyunbdyyv/_remote_module_non_sriptable.py
+[2023-02-15 20:04:24,386][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 20:04:24,386][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 20:04:24,387][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/outputs
+[2023-02-15 20:04:24,387][__main__][INFO] - **/uuid_test/checkpoints/*.ckpt
+[2023-02-15 20:04:24,392][__main__][INFO] - checkpoints: [PosixPath('/home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt')]
+[2023-02-15 20:04:24,392][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/outputs.
+[2023-02-15 20:04:24,392][__main__][INFO] - Found /home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt.
+[2023-02-15 20:04:28,617][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 2
+[2023-02-15 20:04:31,096][torch.distributed.distributed_c10d][INFO] - Rank 2: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-15 20:04:34,559][cross_view_transformer.tabular_logger][WARNING] - Missing logger folder: /home/goroyeh/GKT/segmentation/outputs/lightning_logs

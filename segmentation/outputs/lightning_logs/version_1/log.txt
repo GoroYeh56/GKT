@@ -1,0 +1,3 @@
+lr-AdamW:4e-05, step:0
+train/loss_epoch:0.006396457552909851, train/loss/visible_epoch:0.006342813838273287, train/loss/center_epoch:0.0005364347598515451, epoch:18, step:0
+train/metrics/iou@0.40:0.5433806777000427, train/metrics/iou@0.50:0.45270270109176636, train/metrics/iou_with_occlusions@0.40:0.4469382166862488, train/metrics/iou_with_occlusions@0.50:0.3459915518760681, val/loss:0.012433687224984169, val/loss/visible:0.012370006181299686, val/loss/center:0.0006368053145706654, val/metrics/iou@0.40:0.37664565443992615, val/metrics/iou@0.50:0.3652820885181427, val/metrics/iou_with_occlusions@0.40:0.3411504030227661, val/metrics/iou_with_occlusions@0.50:0.3062412142753601, epoch:17, step:1

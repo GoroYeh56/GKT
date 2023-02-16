@@ -1,0 +1,15 @@
+[2023-02-15 20:04:16,894][torch.distributed.nn.jit.instantiator][INFO] - Created a temporary directory at /tmp/tmpagau9jfb
+[2023-02-15 20:04:16,894][torch.distributed.nn.jit.instantiator][INFO] - Writing /tmp/tmpagau9jfb/_remote_module_non_sriptable.py
+[2023-02-15 20:04:17,091][__main__][INFO] - In maybe_resume_training:
+[2023-02-15 20:04:17,091][__main__][INFO] - experiment.ckptt: model_test.ckpt
+[2023-02-15 20:04:17,092][__main__][INFO] - save_dir: /home/goroyeh/GKT/segmentation/outputs
+[2023-02-15 20:04:17,092][__main__][INFO] - **/uuid_test/checkpoints/*.ckpt
+[2023-02-15 20:04:17,099][__main__][INFO] - checkpoints: [PosixPath('/home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt')]
+[2023-02-15 20:04:17,099][__main__][INFO] - Searching /home/goroyeh/GKT/segmentation/outputs.
+[2023-02-15 20:04:17,099][__main__][INFO] - Found /home/goroyeh/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt.
+[2023-02-15 20:04:31,091][torch.distributed.distributed_c10d][INFO] - Added key: store_based_barrier_key:1 to store for rank: 0
+[2023-02-15 20:04:31,092][torch.distributed.distributed_c10d][INFO] - Rank 0: Completed store-based barrier for key:store_based_barrier_key:1 with 4 nodes.
+[2023-02-15 20:04:34,560][cross_view_transformer.tabular_logger][WARNING] - Missing logger folder: /home/goroyeh/GKT/segmentation/outputs/lightning_logs
+[2023-02-15 20:04:39,853][cross_view_transformer.tabular_logger][INFO] - lr-AdamW:0.000040, step:0
+[2023-02-15 20:04:42,908][cross_view_transformer.tabular_logger][INFO] - train/loss_epoch:0.006396, train/loss/visible_epoch:0.006343, train/loss/center_epoch:0.000536, epoch:18, step:0
+[2023-02-15 20:05:16,783][cross_view_transformer.tabular_logger][INFO] - train/metrics/iou@0.40:0.543279, train/metrics/iou@0.50:0.452470, train/metrics/iou_with_occlusions@0.40:0.446876, train/metrics/iou_with_occlusions@0.50:0.345829, val/loss:0.012434, val/loss/visible:0.012370, val/loss/center:0.000637, val/metrics/iou@0.40:0.376645, val/metrics/iou@0.50:0.365284, val/metrics/iou_with_occlusions@0.40:0.341148, val/metrics/iou_with_occlusions@0.50:0.306240, epoch:17, step:1
