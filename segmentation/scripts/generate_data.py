@@ -61,9 +61,8 @@ def main(cfg):
             
 
             scene_dir = labels_dir / episode.scene_name
-            print(labels_dir)
-            print(episode.scene_name)
-            print(scene_dir)
+            print(f'episode.scene_name: {episode.scene_name}')
+            print(f'scene_dir: {scene_dir}')
            
             # skip if already processed this scene
             #json_file_path = labels_dir/f'{episode.scene_name}.json'
@@ -76,6 +75,7 @@ def main(cfg):
             info = []
 
             for i, batch in enumerate(tqdm(loader, position=1, leave=False)):
+                print(f'i: {i}')
                 info.extend(batch)
 
                 # Load data from disk to test if it was saved correctly
@@ -87,6 +87,7 @@ def main(cfg):
                     cv2.waitKey(1)
 
             # Write all info for loading to json
+            print(f'write all info for loading to json...')
             scene_json = labels_dir / f'{episode.scene_name}.json'
             scene_json.write_text(json.dumps(info))
             
