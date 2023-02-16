@@ -42,7 +42,8 @@ def main(cfg):
     the generated data will be loaded from disk and shown on screen
     """
     setup_config(cfg, setup)
-
+ 
+    # data is DataModule(dataset: 'nuscenes', nuscenes, cfg.loader)
     data = setup_data_module(cfg)
     viz_fn = None
 
@@ -58,8 +59,8 @@ def main(cfg):
         print(f'Generating split: {split}')
 
         for episode in tqdm(data.get_split(split, loader=False), position=0, leave=False):
-            
-
+            # Each item(episode) in the DataLoader: is a set of 40 frames) (20 secs per scene)
+   
             scene_dir = labels_dir / episode.scene_name
             print(f'episode.scene_name: {episode.scene_name}')
             print(f'scene_dir: {scene_dir}')
@@ -74,6 +75,7 @@ def main(cfg):
             loader = torch.utils.data.DataLoader(episode, collate_fn=list, **cfg.loader)
             info = []
 
+            # Iterate over 40 batches
             for i, batch in enumerate(tqdm(loader, position=1, leave=False)):
                 info.extend(batch)
 
