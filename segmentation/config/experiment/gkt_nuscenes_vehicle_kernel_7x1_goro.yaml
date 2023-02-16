@@ -2,7 +2,7 @@
 defaults:
   - override /model: gkt
   - override /data: nuscenes_vehicle
-
+  - override /visualization: nuscenes_viz
   - override /loss: center_loss
   - override /metrics: visibility_metrics
 
