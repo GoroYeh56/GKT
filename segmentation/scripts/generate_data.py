@@ -75,7 +75,6 @@ def main(cfg):
             info = []
 
             for i, batch in enumerate(tqdm(loader, position=1, leave=False)):
-                print(f'i: {i}')
                 info.extend(batch)
 
                 # Load data from disk to test if it was saved correctly

@@ -22,18 +22,20 @@ class DataModule(pl.LightningDataModule):
         self.loader_config = loader_config
 
     def get_split(self, split, loader=True, shuffle=False):
+        # get a list of NuScenesDataset
         datasets = self.get_data(split=split, **self.data_config)
 
         if not loader:
             return datasets
 
+        # Concatenate a list of NuScenesDataset => one dataset
         dataset = torch.utils.data.ConcatDataset(datasets)
 
         loader_config = dict(self.loader_config)
 
         if loader_config['num_workers'] == 0:
             loader_config['prefetch_factor'] = 2
-
+        # return a DataLoader as "train" or "val" dataloader
         return torch.utils.data.DataLoader(dataset, shuffle=shuffle, **loader_config)
 
     def train_dataloader(self, shuffle=True):
