@@ -7,6 +7,8 @@ defaults:
   - override /metrics: visibility_metrics
 
 experiment:
+  save_dir: "/home/goroyeh/GKT/segmentation/outputs"
+  uuid:  "uuid_test"
   ckptt: "model_test.ckpt"
 
 model:
