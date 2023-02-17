@@ -54,7 +54,7 @@ def main(cfg):
     ckpt_path = maybe_resume_training(cfg.experiment)
 
     if ckpt_path is not None:
-        
+        # ckpt_path: ~/GKT/segmentation/outputs/uuid_test/checkpoints/model_test.ckpt
         model_module.backbone = load_backbone(ckpt_path)
 
     # Loggers and callbacks

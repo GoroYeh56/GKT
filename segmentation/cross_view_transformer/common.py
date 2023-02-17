@@ -59,9 +59,11 @@ def setup_experiment(cfg: DictConfig) -> Tuple[ModelModule, DataModule, Callable
 
 
 def load_backbone(checkpoint_path: str, prefix: str = 'backbone'):
+    # checkpoint_path: "~/.../model_test.ckpt"
     checkpoint = torch.load(checkpoint_path)
 
-    cfg = DictConfig(checkpoint['hyper_parameters'])
+    cfg = DictConfig(checkpoint['hyper_parameters'])  
+    print(f'checkpoint hyperparams: {checkpoint["hyper_parameters"]}')
 
     cfg = OmegaConf.to_object(checkpoint['hyper_parameters'])
     # cfg['model']['encoder']['backbone']['image_height'] = cfg['model']['encoder']['backbone'].pop('input_height')
