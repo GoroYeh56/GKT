@@ -60,7 +60,9 @@ def main(cfg):
 
         for episode in tqdm(data.get_split(split, loader=False), position=0, leave=False):
             # Each item(episode) in the DataLoader: is a set of 40 frames) (20 secs per scene)
-   
+            # episode: a "train/val" DataLoader
+    
+
             scene_dir = labels_dir / episode.scene_name
             print(f'episode.scene_name: {episode.scene_name}')
             print(f'scene_dir: {scene_dir}')
@@ -76,9 +78,12 @@ def main(cfg):
             info = []
 
             # Iterate over 40 batches
+            
             for i, batch in enumerate(tqdm(loader, position=1, leave=False)):
+                # What is batch here?
+                # print(f'batch: {batch}')
                 info.extend(batch)
-
+            """
                 # Load data from disk to test if it was saved correctly
                 if i == 0 and viz_fn is not None:
                     unbatched = [load_xform(s) for s in batch]
@@ -86,7 +91,7 @@ def main(cfg):
                     viz = np.vstack(viz_fn(rebatched))
                     cv2.imshow('debug', cv2.cvtColor(viz, cv2.COLOR_RGB2BGR))
                     cv2.waitKey(1)
-
+            """
             # Write all info for loading to json
             print(f'write all info for loading to json...')
             scene_json = labels_dir / f'{episode.scene_name}.json'
