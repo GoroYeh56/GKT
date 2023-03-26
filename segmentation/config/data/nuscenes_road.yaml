@@ -5,3 +5,4 @@ defaults:
 
 data:
   label_indices: [[0, 1]]
+    # label_indices: null

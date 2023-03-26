@@ -481,6 +481,11 @@ class GeometryKernelAttention(nn.Module):
         # (b n) d H W
         bev_embed = bev_embed / (bev_embed.norm(dim=1, keepdim=True) + 1e-7)
         # b n d H W
+
+        print(f'world.shape {world.shape}')
+        print(f'w_embed.shape {w_embed.shape}')
+        print(f'c_embed.shape {c_embed.shape}')
+        print(f'bev_embed.shape {bev_embed.shape}')
         query_pos = rearrange(bev_embed, '(b n) ... -> b n ...', b=b, n=n)
 
         # (b n) d h w
@@ -490,6 +495,20 @@ class GeometryKernelAttention(nn.Module):
         # project local patches using sampling
         # concat feature and embeddings for sampling
         d_feature = feature_flat.shape[1]
+
+        '''
+            features[0].shape torch.Size([24, 32, 56, 120])
+            features[1].shape torch.Size([24, 112, 14, 30])
+            feat_flat.shape torch.Size([24, 32, 56, 120])
+            d_flat.shape torch.Size([24, 4, 56, 120])
+            feat_flat.shape torch.Size([24, 112, 14, 30])
+            d_flat.shape torch.Size([24, 4, 14, 30]        
+    
+        '''
+
+        print(f'feat_flat.shape {feature_flat.shape}') #  24, 112, 14, 30
+        print(f'd_flat.shape {d_flat.shape}')          #  24,   4, 14, 30
+
         feature_embed = torch.cat([feature_flat, d_flat], dim=1)
         feature_embed, mask = self.sampling(
             bev.grid.detach().clone(), feature_embed, I_, E_)
@@ -577,8 +596,39 @@ class GeometryKernelEncoder(nn.Module):
         # b n 4 4
         E_inv = batch['extrinsics'].inverse()     
 
-        features = [self.down(y) for y in self.backbone(self.norm(image))]
+        print(f'batch[image].shape {batch["image"].shape}')
+        print(f'batch[intrinsics].shape {batch["intrinsics"].shape}')
+        print(f'batch[extrinsics].shape {batch["extrinsics"].shape}')
 
+        # print(f'Grd Img shape: {batch["image"].shape}' )
+        # print(f'intrinsics shape: {batch["intrinsics"].shape}' )
+        # print(f'extrinsics shape: {batch["extrinsics"].shape}' )
+
+        """
+        Grd Img shape: torch.Size([4, 6, 3, 224, 480])
+        intrinsics shape: torch.Size([4, 6, 3, 3])
+        extrinsics shape: torch.Size([4, 6, 4, 4])        
+
+        b, n = 4, 6
+        b: batch
+        n: number of cameras
+        c,h,w
+        
+
+        len(features): 2
+        features[0].shape torch.Size([24, 32, 56, 120])
+        features[1].shape torch.Size([24, 112, 14, 30])
+
+        """
+
+
+
+        features = [self.down(y) for y in self.backbone(self.norm(image))]
+        
+        # print(f'len(features): {len(features)}')            # 2
+        print(f'features[0].shape {features[0].shape}')     # (1, 32, 64, 256)  
+        print(f'features[1].shape {features[1].shape}')  
+        
         # d H W
         x = self.bev_embedding.get_prior()
         # b d H W

@@ -13,10 +13,10 @@ class CrossViewTransformer(nn.Module):
 
         dim_total = 0
         dim_max = 0
-
+        print(f'outputs: {outputs}')
         for _, (start, stop) in outputs.items():
             assert start < stop
-
+            print(f'start, stop {start} ,  {stop}')
             dim_total += stop - start
             dim_max = max(dim_max, stop)
 
@@ -37,4 +37,10 @@ class CrossViewTransformer(nn.Module):
         y = self.decoder(x)
         z = self.to_logits(y)
 
+        print(f'z.shape {z.shape}') # 4, 2, 200, 200
+
+        out = {k: z[:, start:stop] for k, (start, stop) in self.outputs.items()}
+        print(f'output[bev].shape {out["bev"].shape}') # 4, 1, 200, 200
+        return out
+    
         return {k: z[:, start:stop] for k, (start, stop) in self.outputs.items()}

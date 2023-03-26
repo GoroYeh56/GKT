@@ -2,9 +2,8 @@ defaults:
   - _self_
 
   - model: null
-  - data: ???
   - visualization: null
-
+  - data: nuscenes
   - loss: default_loss        # Default: use ... /config/loss/default_loss.yaml
   - metrics: default_metrics  # Default: use ... /config/metrics/default_metrics.yaml
 

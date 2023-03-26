@@ -13,7 +13,8 @@ cameras: [[0, 1, 2, 3, 4, 5]]
 # Takes the form [[i, j, ...], [p, q, ...]]
 # where [i, j, ...] are indices of individual classes (car, truck, ...),
 # and will be grouped into one semantic class (vehicle).
-label_indices: null                                   
+label_indices: null   
+# label_indices: [[0,1], [2,3], [4,5,6,7,8, 10,11]] 
 
 # label parameters
 bev: 

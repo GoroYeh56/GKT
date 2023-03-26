@@ -43,6 +43,11 @@ def main(cfg):
     """
     setup_config(cfg, setup)
  
+
+    print(f'Number of classes: {cfg.data.num_classes}')
+    # print(f'Number of classes: {cfg.data.num_classes}')
+    print(f'label_indices: {cfg.data.label_indices}')
+
     # data is DataModule(dataset: 'nuscenes', nuscenes, cfg.loader)
     data = setup_data_module(cfg)
     viz_fn = None

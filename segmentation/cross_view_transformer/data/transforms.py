@@ -86,7 +86,8 @@ class SaveDataTransform:
 
         return result
 
-    def __call__(self, batch):
+    def __call__(self, batch): 
+        # Used in nuscenes_dataset.py __getitem__ when "data = self.transform(data)" !
         """
         Save sensor/label data and return any additional info to be saved to json
         """

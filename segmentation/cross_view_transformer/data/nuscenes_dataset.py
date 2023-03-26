@@ -116,7 +116,7 @@ class NuScenesDataset(torch.utils.data.Dataset):
         scene_name: str,
         scene_record: dict,
         helper: NuScenesSingleton,
-        transform=None,
+        transform=None,                 # transform: the label class (SaveDataTransform)
         cameras=[[0, 1, 2, 3, 4, 5]],
         bev={'h': 200, 'w': 200, 'h_meters': 100, 'w_meters': 100, 'offset': 0.0},
     ):
@@ -422,6 +422,6 @@ class NuScenesDataset(torch.utils.data.Dataset):
         )
 
         if self.transform is not None:
-            data = self.transform(data)
+            data = self.transform(data) # enter __call__ in class SaveDataTransform in transform.py
 
         return data

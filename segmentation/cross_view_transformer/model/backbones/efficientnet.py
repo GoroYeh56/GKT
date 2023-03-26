@@ -3,6 +3,7 @@ import torch.nn as nn
 
 from efficientnet_pytorch import EfficientNet
 
+from pathlib import Path
 
 # Precomputed aliases
 MODELS = {
@@ -56,8 +57,19 @@ class EfficientNetExtractor(torch.nn.Module):
 
         # segmentation/cross_view_transformer/model/backbone/efficient.py
         # We can set memory efficient swish to false since we're using checkpointing
+        print(f'efficientnet.py cwd: {Path.cwd()}') # /home/goroyeh/GKT/segmentation
+        # Why if we run train.py, pwd becomes /home/goroyeh/GKT/segmentation/outputs/2023-03-12/16-46-37/?
+        # If run script/train.py: ../../../../pretrained_models/...
+        # net = EfficientNet.from_pretrained(
+
+        
+        # If run save_gif_stitch.py:
+        #     model_name, weights_path="../pretrained_models/efficientnet-b4-6ed6700e.pth")
+        # If run train.py:
+        #  weights_path="../../../../pretrained_models/efficientnet-b4-6ed6700e.pth"
         net = EfficientNet.from_pretrained(
-            model_name, weights_path="../../../../pretrained_models/efficientnet-b4-6ed6700e.pth")
+            model_name, weights_path="../pretrained_models/efficientnet-b4-6ed6700e.pth")
+            # model_name, weights_path= "../../../../pretrained_models/efficientnet-b4-6ed6700e.pth")        
         net.set_swish(False)
 
         drop = net._global_params.drop_connect_rate / len(net._blocks)

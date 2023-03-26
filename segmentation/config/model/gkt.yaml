@@ -2,7 +2,7 @@ _target_: cross_view_transformer.model.cvt.CrossViewTransformer
 
 dim_last: 64
 
-outputs:
+outputs: 
   bev: [0, 1]
 
 encoder:
@@ -14,11 +14,11 @@ encoder:
 
   backbone:
     _target_: cross_view_transformer.model.backbones.efficientnet.EfficientNetExtractor
-
     model_name: efficientnet-b4
     layer_names: ['reduction_2', 'reduction_4']
     image_height: ${data.image.h}
     image_width: ${data.image.w}
+
 
   cross_view:
     heads: 4
@@ -53,6 +53,6 @@ decoder:
   _target_: cross_view_transformer.model.decoder.Decoder
 
   dim: ${model.encoder.dim}
-  blocks: [128, 128, 64]
+  blocks: [128, 128, 64]  # This is the number of output channels
   residual: True
   factor: 2

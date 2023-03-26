@@ -60,7 +60,7 @@ def setup_experiment(cfg: DictConfig) -> Tuple[ModelModule, DataModule, Callable
 
 def load_backbone(checkpoint_path: str, prefix: str = 'backbone'):
     # checkpoint_path: "~/.../model_test.ckpt"
-    checkpoint = torch.load(checkpoint_path)
+    checkpoint = torch.load(checkpoint_path, map_location='cpu')
 
     cfg = DictConfig(checkpoint['hyper_parameters'])  
     print(f'checkpoint hyperparams: {checkpoint["hyper_parameters"]}')

@@ -35,7 +35,7 @@ class DataModule(pl.LightningDataModule):
 
         if loader_config['num_workers'] == 0:
             loader_config['prefetch_factor'] = 2
-        # return a DataLoader as "train" or "val" dataloader
+        # return a DataLoader as "train" or "val" dataloader 
         return torch.utils.data.DataLoader(dataset, shuffle=shuffle, **loader_config)
 
     def train_dataloader(self, shuffle=True):

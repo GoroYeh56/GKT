@@ -1,17 +1,24 @@
 # @package _global_
 defaults:
   - override /model: gkt
-  - override /data: nuscenes_vehicle
+  - override /data: nuscenes_road 
+    # This determines the type of model due to 'label_indices'
+    # Whether this model segments ROAD or VEHICLE
   - override /visualization: nuscenes_viz
   - override /loss: center_loss
   - override /metrics: visibility_metrics
 
 experiment:
   save_dir: "/home/goroyeh/GKT/segmentation/outputs"
-  uuid:  "uuid_test"
-  ckptt: "model_test.ckpt"
+  uuid:  "uuid_test_road"
+  ckptt: "model_road.ckpt"
 
 model:
+  # encoder:
+  #   backbone:
+  #     # pretrained_weights_path: "../pretrained_models/efficientnet-b4-6ed6700e.pth"  # When running scripts/save_gif.py
+  #     pretrained_weights_path: "../../../../pretrained_models/efficientnet-b4-6ed6700e.pth" # When scripts/train.py
+
   outputs:
-    bev: [0, 1]
-    center: [1, 2]
+    bev: [0, 2]
+    # center: [1, 2]
